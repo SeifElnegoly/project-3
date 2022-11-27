@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Made With <3 By Seif Elnegoly -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lucas Store | Best Digital Store</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Img/logo.png" class="logo">
+            <nav>
+                <ul id="menu-list">
+                    <li><a href="">Devices</a></li>
+                    <li><a href="">PS4/PS5</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="mailto:nogoseif@gmail.com">Contact Admin</a></li>
+                </ul>
+            </nav>
+            <img src="Img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>PlayStation4</h2>
+                <h3>Wireless Controller for PS4</h3>
+                <p>All Types Available</p>
+                <h4>$50.22</h4>
+                <button type="button">Buy Now<img src="Img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="Img/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="Img/add.png">
+                    <p><small>Add to your bag.</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="socialmedia-links">
+            <img src="Img/fb.png">
+            <img src="Img/ig.png">
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menu-list");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
